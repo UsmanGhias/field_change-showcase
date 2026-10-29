@@ -1,56 +1,37 @@
-# field_change Usman Ghias
+# Decimal Asset Duration
 
-Metadata repository for the private repo: field_change. Field Change Odoo Apps Store
+![Odoo](https://img.shields.io/badge/Odoo-17.0-714B67) ![Editions](https://img.shields.io/badge/Editions-Enterprise_(Assets)-2563EB) ![License](https://img.shields.io/badge/License-LGPL--3-0F766E) [![Odoo App Store](https://img.shields.io/badge/Odoo_App_Store-Free-875A7B)](https://apps.odoo.com/apps/modules/17.0/field_change)
 
-> Portfolio showcase for a private/proprietary implementation. The production source is **not** included in this repository.
+Odoo stores an asset's duration (`method_number`) as a whole number, which rules out schedules such as 2.5 years. This app redefines the field with two decimals so fractional durations can be entered.
 
-## Overview
+## What it does
 
-`field_change` is documented here as a professional case study. This repository contains portfolio metadata and high-level documentation only.
+- Asset duration accepts values such as 2.5 or 7.25
 
-## Problem solved
+## How to use it
 
-Metadata repository for the private repo: field_change. Field Change Odoo Apps Store
+1. Install the app, then edit the duration on an asset.
 
-## Key capabilities
+## Screenshots
 
-- Business-process customization aligned to operational needs
-- Integration with standard Odoo apps where applicable
-- Practical UI and workflow improvements for end users
+![Decimal Asset Duration screenshot 1](screenshots/banner.png)
 
-## Technology and Odoo version
+## Technical notes
 
-- Stack: Odoo, Python, ERP customization
-- Repository type: portfolio case study / documentation
-- Related module/project name: `field_change`
+Technical name `field_change`, Odoo 17.0.
 
-## My contribution
+Overrides `account.asset.method_number` as a Float with digits (6, 2). Depends on `account`.
 
-Architecture, development, customization, integration, testing, and delivery support for the underlying implementation (as applicable to this project).
+> Review the depreciation board after changing the duration of an existing asset.
 
-## Architecture at a high level
+## Get the module
 
-Standard Odoo/ERP extension patterns: module metadata, business models, views/actions, and workflow customization layered on core Odoo apps. Exact proprietary implementation details are intentionally omitted.
+Download it free from the [Odoo App Store](https://apps.odoo.com/apps/modules/17.0/field_change).
 
-## Screenshots or demo
-
-Screenshots are available on request. Any shared visuals must be anonymized and used only with permission.
-
-## Source availability
-
-The production implementation lives in a private repository because it contains proprietary and/or client-specific work, configuration, or assets.
-
-This repository must not be treated as an open-source release of the production codebase.
-
-## License and attribution
-
-Documentation in this showcase repository is provided for portfolio demonstration. Third-party trademarks and product names remain the property of their owners. This README does **not** relicense any private source code.
-
-## Contact
-
-- GitHub: https://github.com/UsmanGhias
-- Profile / portfolio repositories under the same account
+Need it on another Odoo version, with changes for your workflow, or installed and tested on Odoo.sh? Email [iusmanghias@gmail.com](mailto:iusmanghias@gmail.com?subject=field_change%20customisation) or see [CODCrafters](https://codcrafters.org).
 
 ---
 
-Status: Portfolio showcase (documentation only)
+This repository is the product page. The module itself is downloaded from the Odoo App Store.
+
+Built by [Usman Ghias](https://usmanghias.co.uk), [CODCrafters](https://codcrafters.org).
